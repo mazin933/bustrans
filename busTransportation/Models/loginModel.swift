@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import UIKit
+
+class loginModel: UIViewController {
+    
+    func checkTextFieldsValues(_ textField: UITextField...) -> Bool {
+        for tf in textField {
+            if (tf.text?.isEmpty)! {
+                return true
+            }
+        }
+        return false
+    }
+    
+}
